@@ -16,6 +16,8 @@ Capybara.register_driver :my_chrome do |app|
     options.args << '--incognito'
     options.args << '--start-maximized'
     options.args << '--window-size=1420,835'
+    options.args << '--excludeSwitches'
+    options.args << '--enable-logging'
     if ENV['HEADLESS']
         options.args << '--headless'
     end

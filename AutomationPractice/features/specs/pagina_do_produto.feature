@@ -9,20 +9,16 @@ Funcionalidade: Página do Produto
         Dado que esteja na página do Produto
 
     @change_color
-    Esquema do Cenário: Alterar a cor do produto
+    Cenário: Alterar a cor do produto
         Quando alterar a cor do produto na PDP
-        Então deverá trocar a imagem do produto apresentada para a cor desejada
-
-        Exemplos:
-        |   cor   |
-        | Yellow  |
-        | Blue    | 
+        Então deverá trocar a imagem do produto apresentada
 
     Cenário: Alterar a cor do produto e adicionar ao carrinho
         Quando alterar a cor do produto na PDP
         E adicionar produto ao carrinho
         Então o produto deverá ser adicionado ao carrinho com a cor selecionada
 
+    @change_size
     Cenário: Alterar o tamanho do produto
         Quando alterar o tamanho do produto na PDP
         Então deverá exibir o tamanho do produto escolhido
@@ -32,6 +28,7 @@ Funcionalidade: Página do Produto
         E adicionar produto ao carrinho
         Então o produto deverá ser adicionado ao carrinho com o tamanho selecionado
 
+    @change_quantity
     Cenário: Alterar a Quantidade do produto
         Quando alterar a quantidade do produto na PDP
         E adicionar produto ao carrinho
