@@ -13,7 +13,7 @@ module Pages
         element :btn_increase_quantity, '[class="btn btn-default button-plus product_quantity_up"]'
         element :btn_add_to_cart, '[id="add_to_cart"] [type="submit"]'
 
-        element :foatingCart, '[class="layer_cart_product col-xs-12 col-md-6"]'
+        element :floatingCart, '[class="layer_cart_product col-xs-12 col-md-6"]'
         element :floating_cart_product_quantity, '[id="layer_cart_product_quantity"]'
 
         def size_change(index)

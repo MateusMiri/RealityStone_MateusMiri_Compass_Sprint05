@@ -5,7 +5,6 @@ Dado('que esteja na página do Produto') do
   
   #change_color
   Quando('alterar a cor do produto na PDP') do
-    binding.pry
     @product_image_before = @pdp.product_image['src'] 
     @pdp.colors(0)
   end
@@ -32,7 +31,7 @@ Dado('que esteja na página do Produto') do
   
   Quando('adicionar produto ao carrinho') do
     @pdp.btn_add_to_cart.click
-    @pdp.wait_until_foatingCart_visible
+    @pdp.wait_until_floatingCart_visible
   end
   
   Então('o produto deverá ser adicionado ao carrinho com a quantidade selecionada') do

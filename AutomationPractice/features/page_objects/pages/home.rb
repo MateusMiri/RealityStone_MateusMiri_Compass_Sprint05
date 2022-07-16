@@ -8,9 +8,9 @@ module Pages
 
 
         def search_for(product)
-            search_input.click
-            search_input.set product
-            btn_search.click
+            header.search_input.click
+            header.search_input.set product
+            header.btn_search.click
         end
 
     end
