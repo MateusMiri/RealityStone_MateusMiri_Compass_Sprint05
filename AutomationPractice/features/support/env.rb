@@ -5,10 +5,11 @@ require 'site_prism'
 require 'selenium-webdriver'
 require 'rspec'
 require 'pry'
+require 'faker'
+require 'i18n'
 
 ENVIRONMENT = ENV['ENVIRONMENT']
 ENVIRONMENT_CONFIG = YAML.load_file(File.dirname(__FILE__) + "/environment/#{ENVIRONMENT}.yml")
-puts ENVIRONMENT_CONFIG
 URL = ENVIRONMENT_CONFIG['url']
 
 Capybara.register_driver :my_chrome do |app|
@@ -23,7 +24,6 @@ Capybara.register_driver :my_chrome do |app|
     end
     Capybara::Selenium::Driver.new(app, :browser => :chrome, :options => options)
 end
-
 
 Capybara.default_driver = :my_chrome
 Capybara.app_host = URL

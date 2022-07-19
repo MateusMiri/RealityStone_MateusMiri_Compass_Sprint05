@@ -8,3 +8,4 @@ prd: ENVIRONMENT="prd"
 # Visual Mode
 
 headless: HEADLESS="true"
+

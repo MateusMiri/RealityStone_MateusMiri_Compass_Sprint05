@@ -1,6 +1,7 @@
 #language: pt
 
 @regression
+@search
 Funcionalidade: Busca
     Como usuário do E-commerce AutomationPractice
     Quero realizar uma busca de produtos

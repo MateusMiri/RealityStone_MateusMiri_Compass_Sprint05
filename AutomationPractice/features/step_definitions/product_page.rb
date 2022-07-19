@@ -31,7 +31,7 @@ Dado('que esteja na página do Produto') do
   
   Quando('adicionar produto ao carrinho') do
     @pdp.btn_add_to_cart.click
-    @pdp.wait_until_floatingCart_visible
+    @pdp.wait_until_floatingCart_visible(wait: 5)
   end
   
   Então('o produto deverá ser adicionado ao carrinho com a quantidade selecionada') do
