@@ -3,7 +3,7 @@
 @regression
 @product_page
 Funcionalidade: Página do Produto
-    Sendo um usuário do E-commerce YourLogo
+    Sendo um usuário do E-commerce AutomationPractice
     Quero poder selecionar os produtos que desejo comprar
     Para ter uma boa experiência de compra
 

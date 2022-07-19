@@ -4,6 +4,5 @@ module Pages
 
         elements :products, 'div.product-container'
 
-
     end
 end

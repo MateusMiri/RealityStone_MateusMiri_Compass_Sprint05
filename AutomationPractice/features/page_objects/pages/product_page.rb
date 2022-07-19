@@ -2,15 +2,11 @@ require_relative '../sections/login.rb'
 
 module Pages
     class ProductPage < SitePrism::Page
-
         set_url 'http://automationpractice.com/index.php?id_product=5&controller=product&search_query=DRESSES&results=7#/size-s/color-yellow'
-
 
         element :btn_size, 'div.selector'
         elements :size_options, '#group_1 [value]' 
         element :selected_size, 'div .selector [style]'
-
-
         
         elements :color_options, '.attribute_list a'
         element :product_image, '[id="bigpic"]'
@@ -48,9 +44,5 @@ module Pages
             loginSection.input_password.set set_password
             loginSection.btn_login.click
         end
-
-
-
-
     end
 end

@@ -5,7 +5,5 @@ module Sections
         element :input_password, '[class="form-group"] [id="passwd"]'
         element :btn_login, '[id="SubmitLogin"]'
         
-
-
     end
 end

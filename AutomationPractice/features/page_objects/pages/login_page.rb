@@ -25,13 +25,11 @@ module Pages
         element :input_mobile_phone, '[id="phone_mobile"]'
         element :btn_register_submit, '[id="submitAccount"]'
 
-
         ###
 
         section :loginSection, Sections::LoginSection, '[id="login_form"]'
         element :login_error_message, '[class="alert alert-danger"] li'
         
-
         def preencher_cadastro()
             input_first_name.set Factory::Dynamic.dynamic_data[:first_name]
             input_last_name.set Factory::Dynamic.dynamic_data[:last_name]
