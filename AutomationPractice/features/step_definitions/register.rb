@@ -1,7 +1,7 @@
 Dado('acesse o formulário de Cadastro com um E-mail válido') do
     @login_page.input_email_for_register.set Factory::Dynamic.dynamic_data[:register_email]
     @login_page.btn_submit_email.click
-    @login_page.wait_until_registerForm_visible(wait: 5)
+    @login_page.wait_until_registerForm_visible(wait: 7)
   end
   
   Quando('preencher todos os campos do formulário de Cadastro') do
