@@ -12,6 +12,7 @@ ENVIRONMENT = ENV['ENVIRONMENT']
 ENVIRONMENT_CONFIG = YAML.load_file(File.dirname(__FILE__) + "/environment/#{ENVIRONMENT}.yml")
 URL = ENVIRONMENT_CONFIG['url']
 
+#Solução Desenvolvida e Compartilhada por Daniel Merib
 Capybara.register_driver :my_chrome do |app|
     options = Selenium::WebDriver::Chrome::Options.new
     options.args << '--incognito'
@@ -22,6 +23,7 @@ Capybara.register_driver :my_chrome do |app|
     if ENV['HEADLESS']
         options.args << '--headless'
     end
+###
     Capybara::Selenium::Driver.new(app, :browser => :chrome, :options => options)
 end
 
